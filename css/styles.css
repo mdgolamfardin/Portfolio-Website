@@ -24,6 +24,9 @@ h1 {
   font-family: Sacramento, cursive;
   font-size: 5.0rem;
   margin: 50px auto 0 auto;
+  animation-name: emerge;
+  animation-duration: 1s;
+  animation-duration: linear;
 }
 
 h2 {
@@ -75,7 +78,7 @@ hr {
 .credit {
   margin: 0;
   font-size: 0.73rem;
-  color:white;
+  color: white;
 }
 
 
@@ -84,7 +87,7 @@ hr {
   min-height: 80px;
   background-color: #66BFBF;
   margin: 0;
-  padding-top: 15px ;
+  padding-top: 15px;
 
 }
 
@@ -101,6 +104,7 @@ hr {
   font-weight: bold;
   color: #11999E;
 }
+
 .footer-link:hover {
   font-size: 1.2rem;
   color: #EAF6F6;
@@ -114,7 +118,7 @@ hr {
   width: 200px;
   animation-name: moveCloud1;
   animation-duration: 1.5s;
-} 
+}
 
 .into-cont {
   font-size: 1.2rem;
@@ -128,6 +132,8 @@ hr {
 }
 
 .opening {
+  overflow-x: hidden;
+  /*o prevent horizontal scrolling when elements transform out of bounds during animation*/
   height: 680px;
   margin: 0;
   position: relative;
@@ -189,7 +195,8 @@ hr {
 }
 
 .top-skill-row {
-  margin-top: 80px auto 70px;;
+  margin-top: 80px auto 70px;
+  ;
 }
 
 .closing {
@@ -282,12 +289,33 @@ hr {
 /************************* Animation Keyframes **********************************/
 
 @keyframes moveCloud1 {
-  from {right: 0px;}
-  to {right: 220px}
+  from {
+    right: 0px;
+  }
+
+  to {
+    right: 220px
+  }
 }
 
 @keyframes moveCloud2 {
-  from {left: 0px;}
-  to {left: 220px}
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 220px
+  }
 }
 
+@keyframes emerge {
+  from {
+    opacity: 0%;
+    transform: scale(2.5);
+  }
+
+  to {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}

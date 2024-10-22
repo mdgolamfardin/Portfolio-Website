@@ -111,7 +111,9 @@ hr {
   position: absolute;
   top: 50px;
   right: 220px;
-  width: 180px;
+  width: 200px;
+  animation-name: moveCloud1;
+  animation-duration: 1.5s;
 } 
 
 .into-cont {
@@ -137,14 +139,17 @@ hr {
   position: absolute;
   bottom: 300px;
   left: 220px;
-  width: 180px;
+  width: 200px;
+  animation-name: moveCloud2;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .mountain {
   position: absolute;
-  left: 365px;
+  left: 355px;
   bottom: 5px;
-  width: 780px;
+  width: 800px;
 
 }
 
@@ -273,3 +278,16 @@ hr {
 .m {
   margin: 40px auto 40px;
 }
+
+/************************* Animation Keyframes **********************************/
+
+@keyframes moveCloud1 {
+  from {right: 0px;}
+  to {right: 220px}
+}
+
+@keyframes moveCloud2 {
+  from {left: 0px;}
+  to {left: 220px}
+}
+

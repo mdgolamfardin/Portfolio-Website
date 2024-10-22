@@ -1,3 +1,4 @@
+
 body {
   background-color: rgb(248, 252, 252);
   text-align: center;
@@ -55,32 +56,32 @@ hr {
 
 /************************* Class Selectors **********************************/
 
-.hello {
+.about h2 {
   font-size: 1.5rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  width: 55%;
+  margin: 0 auto 25px;
 }
 
 .skill {
   width: 100%;
 }
 
-.bio {
+.about p {
   font-size: 1.2rem;
   width: 55%;
   margin: 0 auto 25px;
 }
 
-.bio-2 {
-  font-size: 1.2rem;
-  width: 55%;
-  margin: 0 auto 50px;
-}
 
 .credit {
   margin: 0;
   font-size: 0.73rem;
   color: white;
 }
-
 
 
 .bottom-container {
@@ -132,23 +133,13 @@ hr {
 }
 
 .opening {
-  overflow-x: hidden;
-  /*o prevent horizontal scrolling when elements transform out of bounds during animation*/
+  
+  overflow-x: hidden;  /*to prevent horizontal scrolling transforms out of bounds during animation*/
   height: 680px;
   margin: 0;
   position: relative;
   padding-top: 100px;
   background-color: #e4f9f5;
-}
-
-.second-cloud {
-  position: absolute;
-  bottom: 300px;
-  left: 220px;
-  width: 200px;
-  animation-name: moveCloud2;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
 }
 
 .mountain {
@@ -160,13 +151,22 @@ hr {
 }
 
 .profile-pic {
-  margin-top: 30px;
   height: 200px;
   width: 200px;
 }
 
 .project-link {
   color: #40514E;
+}
+
+.second-cloud {
+  position: absolute;
+  bottom: 300px;
+  left: 220px;
+  width: 200px;
+  animation-name: moveCloud2;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .skill-image-1 {

@@ -110,8 +110,8 @@ hr {
 .first-cloud {
   position: absolute;
   top: 50px;
-  right: 15%;
-  width: 12%
+  right: 220px;
+  width: 180px;
 } 
 
 .into-cont {
@@ -126,6 +126,7 @@ hr {
 }
 
 .opening {
+  height: 680px;
   margin: 0;
   position: relative;
   padding-top: 100px;
@@ -134,9 +135,17 @@ hr {
 
 .second-cloud {
   position: absolute;
-  left: 15%;
   bottom: 300px;
-  width: 12%;
+  left: 220px;
+  width: 180px;
+}
+
+.mountain {
+  position: absolute;
+  left: 365px;
+  bottom: 5px;
+  width: 780px;
+
 }
 
 .profile-pic {

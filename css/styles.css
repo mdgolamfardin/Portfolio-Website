@@ -1,10 +1,12 @@
 body {
+  background-color: rgb(248, 252, 252);
   text-align: center;
   margin: 0;
   font-family: Nunito, sans-serif;
 }
 
 button {
+  cursor: pointer;
   border: none;
   padding: 0;
   margin: 0;
@@ -75,16 +77,8 @@ hr {
   font-size: 0.73rem;
   color:white;
 }
-.topDiv {
-  margin: 0;
-  position: relative;
-  padding-top: 100px;
-  background-color: #e4f9f5;
-}
 
-.middle-container {
-  margin: 30px auto 0 auto;
-}
+
 
 .bottom-container {
   min-height: 80px;
@@ -129,6 +123,13 @@ hr {
   margin-top: 70px;
   color: #40514E;
   font-size: 1.55rem;
+}
+
+.opening {
+  margin: 0;
+  position: relative;
+  padding-top: 100px;
+  background-color: #e4f9f5;
 }
 
 .second-cloud {
@@ -177,7 +178,7 @@ hr {
   margin-top: 80px auto 70px;;
 }
 
-.contact-me {
+.closing {
   background-color: #292929;
   padding: 25px;
 }

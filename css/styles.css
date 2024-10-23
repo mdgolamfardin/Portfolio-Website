@@ -1,6 +1,6 @@
 
 body {
-  background-color: rgb(248, 252, 252);
+  background-color: rgb(241, 245, 245);
   text-align: center;
   margin: 0;
   font-family: Nunito, sans-serif;
@@ -54,7 +54,12 @@ hr {
   margin: 75px auto 75px;
 }
 
+
 /************************* Class Selectors **********************************/
+
+.about {
+  padding: 40px 150px;
+}
 
 .about h2 {
   font-size: 1.5rem;
@@ -62,18 +67,20 @@ hr {
 
 .about p {
   font-size: 1.2rem;
-  width: 55%;
-  margin: 0 auto 25px;
 }
 
-.skill {
-  width: 100%;
+.contents {
+  margin: 30px 0;
+  display: inline-flex;
+  width: 1000px;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.about p {
-  font-size: 1.2rem;
-  width: 55%;
-  margin: 0 auto 25px;
+.contents section {
+  background-color: white;
+  border-radius: 20px;
+
 }
 
 
@@ -139,7 +146,7 @@ hr {
   margin: 0;
   position: relative;
   padding-top: 100px;
-  background-color: #e4f9f5;
+  background-color: #e4fafa;
 }
 
 .mountain {
@@ -151,6 +158,8 @@ hr {
 }
 
 .profile-pic {
+  border-radius: 100px;
+  box-shadow: 0 5px 12px  gray;
   height: 200px;
   width: 200px;
 }
@@ -167,6 +176,10 @@ hr {
   animation-name: moveCloud2;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+}
+
+.skill {
+  width: 100%;
 }
 
 .skill-image-1 {

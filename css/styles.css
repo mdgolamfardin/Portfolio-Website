@@ -20,6 +20,8 @@ p {
 }
 
 h1 {
+  position: relative;
+  z-index: 2;
   color: #66BFBF;
   font-family: Sacramento, cursive;
   font-size: 6.0rem;
@@ -149,76 +151,119 @@ hr {
 
 .opening {
   overflow-x: hidden;
+  overflow-y: hidden;
   /*to prevent horizontal scrolling transforms out of bounds during animation*/
   height: 680px;
   margin: 0;
   position: relative;
   padding-top: 100px;
-  background-color: #e4fafa;
+  background-color: #E4F8F5;
 }
 
 .opening h3 {
+  position: relative;
+  z-index: 2;
   font-size: 2em;
   color: #66BFBF;
 }
 
 .mountain {
-  position: absolute;
-  left: 355px;
-  bottom: 5px;
+  z-index: 1;
+  position: relative;
+  bottom: 90px;
+  min-width: 350px;
   width: 800px;
 
 }
 
 .profile-pic {
-  border-radius: 100px;
+  border-radius: 115px;
   box-shadow: 0 10px 12px -5px rgb(0, 0, 0);
-  height: 200px;
-  width: 200px;
+  height: 230px;
+  width: 230px;
 }
 
 .projects {
   padding: 60px 0;
   background: linear-gradient(#385364, #243642, #243642);
-  /* background-color: #262e39; */
 }
 
 .projects a {
   text-decoration: none;
 }
 
+.projects p {
+  color: #777261;
+  text-align: justify;
+  font-weight: lighter;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  padding: 0 30px;
+  transition: all 0.3s;
+
+}
+
+.projects h3 {
+  font-size: 1.5rem;
+  transition: 0.3s; /*when project-grid div is hovered*/
+}
+
 .project-grid {
-  margin: 40px 0;
+  margin: 50px 0;
   display: grid;
-  grid-template-columns: 340px 340px 340px;
   justify-content: center;
+  grid-template-columns: 330px 330px 330px;
   gap: 40px 65px;
-
-
 }
 
 .project-grid div {
   padding: 8px;
   position: relative;
   border-radius: 20px;
-  width: 100%;
-  height: 400px;
+  width: 314px;
+  height: 440px;
   background-color: #F9E2AF;
 
-  transition: all 0.5s;
+  transition: all 0.3s;
+  margin: 0;
   bottom: 0;
   box-shadow: 0 0px 0px #657c8d;
   border: 0px;
 }
 
 .project-grid div:hover {
-  background-color: #d3bc8a;
-  border: 2px #cfe5f6;
-  box-shadow: 0 10px 15px #657c8d;
-  bottom: 5px;
+  margin-bottom: -10px;
+  background-color: #f1ddad;
+  border: 2px solid #d9eaf7; 
+  box-shadow: 0 5px 10px #768fa1;
+  bottom: 10px;
   cursor: pointer;
+}
+
+.project-grid div:hover h3 {
+  font-weight: 900;
+  transform: scale(1.01);
+}
+
+.project-grid div:hover p {
+
+  transform: scale(1.01);
+}
+
+
+.project-grid div:hover img {
+  transform: scale(1.03);
 
 }
+
+.project-grid div img {
+  width: 300px;
+  height: 160px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px gray;
+  transition: all 0.3s;
+}
+
 
 
 .second-cloud {
@@ -232,7 +277,7 @@ hr {
 }
 
 .skills {
-  padding: 60px 0;
+  padding: 60px 40px;
   background: linear-gradient(#e8fdff, #b2e0e3);
   /* background-color: #d5f0f2; */
   overflow-x: hidden;
@@ -254,10 +299,13 @@ hr {
 }
 
 .skills div {
-  margin: 0px auto;
-  width: 900px;
+  flex: 1 1 auto;  
+  max-width: 950px;  /* Maximum width of the flex item */
+  min-width: 300px;  /* Minimum width to prevent them from getting too small */
+  margin: 0 auto;  /* Optional: Adds space around items */
+  box-sizing: border-box;
   background-color: #243642;
-  padding: 30px 55px;
+  padding: 30px 45px;
   border-radius: 30px;
   text-align: left;
   /* to be added later
@@ -267,6 +315,7 @@ hr {
 
 .skills p {
   color: white;
+  font-size: 1.1rem;
 }
 
 .skills .project-link {
@@ -274,78 +323,33 @@ hr {
 }
 
 
-.skill-image-1,
-.skill-image-3 {
+.skill-image-1, .skill-image-3 {
   border-radius: 0 0 40px 0;
   float: left;
   margin-right: 30px;
-  width: 200px;
+  width: 180px;
 }
 
 .skill-image-2 {
   float: right;
   margin-left: 30px;
-  width: 200px;
-}
-
-.BUTTON_RTQ {
-  background: #3DF6E5;
-  background-image: -webkit-linear-gradient(top, #3DF6E5, #026B83);
-  background-image: -moz-linear-gradient(top, #3DF6E5, #026B83);
-  background-image: -ms-linear-gradient(top, #3DF6E5, #026B83);
-  background-image: -o-linear-gradient(top, #3DF6E5, #026B83);
-  background-image: linear-gradient(to bottom, #3DF6E5, #026B83);
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  border-radius: 16px;
-  color: #FFFFFF;
-  font-family: Montserrat, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  padding: 13px;
-  box-shadow: 1px 1px 20px 0px #000000;
-  -webkit-box-shadow: 1px 1px 20px 0px #000000;
-  -moz-box-shadow: 1px 1px 20px 0px #000000;
-  text-shadow: 1px 1px 20px #000000;
-  border: solid #1D3F54 1px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  margin: 5px auto 50px;
-}
-
-.BUTTON_RTQ:hover {
-  border: solid #337FED 1px;
-  background: #719FD9;
-  background-image: -webkit-linear-gradient(top, #719FD9, #1F95C3);
-  background-image: -moz-linear-gradient(top, #719FD9, #1F95C3);
-  background-image: -ms-linear-gradient(top, #719FD9, #1F95C3);
-  background-image: -o-linear-gradient(top, #719FD9, #1F95C3);
-  background-image: linear-gradient(to bottom, #719FD9, #1F95C3);
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  border-radius: 16px;
-  text-decoration: none;
+  width: 180px;
 }
 
 .btn {
-  background: #53cfcf;
-  background-image: -webkit-linear-gradient(top, #53cfcf, #2b7575);
-  background-image: -moz-linear-gradient(top, #53cfcf, #2b7575);
-  background-image: -ms-linear-gradient(top, #53cfcf, #2b7575);
-  background-image: -o-linear-gradient(top, #53cfcf, #2b7575);
-  background-image: linear-gradient(to bottom, #53cfcf, #2b7575);
+  font-size: 10em;
+  background: #45b6b6;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
-  border-radius: 28px;
+  border-radius: 5px;
   font-family: Arial;
   color: #ffffff;
   font-size: 19px;
-  padding: 10px 20px 10px 20px;
+  padding: 20px 20px;
   text-decoration: none;
-  min-width: 112px;
-  margin: 0 10px 20px 10px;
+  min-width: 200px;
+  min-height: 100px;
+  margin: 0 40px 30px;
 }
 
 .btn:hover {
@@ -355,9 +359,7 @@ hr {
   background-image: -ms-linear-gradient(top, #5ad6d6, #44a3a3);
   background-image: -o-linear-gradient(top, #5ad6d6, #44a3a3);
   background-image: linear-gradient(to bottom, #5ad6d6, #44a3a3);
-  text-decoration: none;
-  min-width: 112px;
-}
+  text-decoration: none;}
 
 
 

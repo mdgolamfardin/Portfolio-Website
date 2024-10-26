@@ -12,8 +12,11 @@
 </head>
 
 <body>
-  <header class="navbar">
-    <h2>Fardin's Portfolio</h2>
+  <header id="navbar">
+    <a href="">
+      <h2>Fardin's Portfolio</h2>
+    </a>
+
     <div>
       <a href="#about">about</a><a href="#skills">skills</a><a href="#projects">projects</a><a
         href="#contact">contact</a>
@@ -180,6 +183,30 @@
       LinkedIn, GitHub & Email icons by <a target="_blank" href="https://icons8.com">Icons8</a>
     </p>
   </footer>
+
+  <script>
+    let lastScrollTop = 0; // Variable to store the last scroll position
+    const navbar = document.getElementById('navbar'); // Get the navbar element
+
+    window.addEventListener('scroll', function () {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        navbar.style.top = "-80px"; // Adjust this value based on the navbar's height
+      } else {
+        // Scrolling up
+        navbar.style.top = "0";
+        navbar.style.padding = "15px 125px 10px";
+      }
+      if (currentScroll === 0) {
+      // At the top of the page
+      navbar.style.padding = "25px 125px 10px"; // Ensure it's full size at the top
+    }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    }, false);
+  </script>
 
 
 </body>

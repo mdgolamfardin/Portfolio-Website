@@ -12,6 +12,67 @@ button {
   margin: 0;
 }
 
+footer {
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #66bfbf;
+  font-size: 0.80rem;
+  color: white;
+  margin: 0;
+  min-height: 80px;
+}
+
+footer p, footer a {
+  line-height: normal;
+  color: white;
+  font-size: 1em;
+  margin: 0;
+}
+
+footer p {
+  padding: 10px 0 5px;
+}
+
+header {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between; 
+  align-items: end;
+  padding: 25px 100px 10px; 
+  z-index: 4;
+  background-color: #66bfbf;
+
+}
+
+header h2, header a{
+  color: white;
+  text-decoration: none;
+
+}
+
+header div {
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+header div a {
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+
+header h2 {  
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  text-shadow: 0px 2px 4px #2e4d4d
+}
+
+
+
 p {
   font-weight: 600;
   font-size: 1.2rem;
@@ -144,18 +205,6 @@ hr {
   width: 55%;
 }
 
-footer {
-  background-color: #181a19;
-  font-size: 0.80rem;
-  color: white;
-  margin: 0;
-  min-height: 80px;
-}
-
-footer p {
-  background-color: #66bfbf;
-  margin: 0;
-}
 .first-cloud {
   position: absolute;
   top: 50px;

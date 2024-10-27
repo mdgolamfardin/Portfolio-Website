@@ -9,104 +9,206 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Engagement&family=Merriweather+Sans&family=Montserrat&family=Nunito&family=Qwigley&family=Sacramento&display=swap"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BR:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
 
 <body>
+  <header id="navbar">
+    <a href="">
+      <h2>Fardin's Portfolio</h2>
+    </a>
 
-  <div class="topDiv">
-    <img class="first-cloud" src="sun.png" alt="cloud">
-    <h1>I'm Fardin</h1>
-    <h2><strong>I code, develop, and analyze</strong></h2>
-    <h2 class="into-cont"><i>...now looking to specialize</i></h2>
-    <img style="margin-top: 30px;" class="second-cloud" src="cloud-second.png" alt="cloud">
-    <img src="mountain.png" alt="mountain">
-  </div>
-
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-pic" src="profile-pic-10.png" alt="profile">
-      <h2 class="hello">Hello.</h2>
-      <div>
-        <p class="bio">
-          I am attending Saint Mary's University to understand the science of computers. Learning multiple programming
-          languages has enabled
-          me to command the machines, and they seem to be obidient. Additionally, I grew a passion for the art of
-          developing websites,
-          and this webpage that I built for myself is a testament to it.
-        </p>
-        <p class="bio-2">
-          Now, with the world doubling the amount of digital data produced every year, I am focusing on becoming an
-          exceptional data analyst. Through Google's Data Analytics Certificate program, I am learning how to help
-          organizations manage
-          their wealth of data and provide crucial insights.
-        </p>
-      </div>
+    <div>
+      <a href="#about">about</a><a href="#skills">skills</a><a href="#projects">projects</a><a
+        href="#contact">contact</a>
     </div>
-    <hr>
-    <div class="skills">
-      <h2 class="skill-title">My Skills</h2>
-      <div class="top-skill-row skill-row">
-        <img class="skill-image-1" src="skill 2.png" alt="skill 1">
+  </header>
+  <main>
+    <section class="opening">
+      <img class="first-cloud" src="images/cloud-second.png" alt="cloud">
+      <h1>I'm Fardin</h1>
+      <h3>-an aspiring web and software developer</h3>
+      <img class="mountain" src="images/mountain.png" alt="mountain">
+
+      <img class="second-cloud" src="images/cloud-second.png" alt="cloud">
+    </section>
+
+
+    <section id="about" class="about">
+      <div class="contents"><img class="profile-pic" src="images/profile-pic-10.png" alt="profile">
+        <h3>Hello.</h3>
+        <div>
+          <p>
+            I am attending Saint Mary's University to understand the science of computers. Learning multiple
+            programming languages has enabled me to command the computers, turns out these machines are extremely
+            good at following instructions. Additionally, I grew a passion for the art of developing websites,
+            and this webpage that I built for myself is a testament to it.
+          </p>
+          <p>
+            Now, with the world doubling the amount of digital data produced every year, I am focusing on becoming an
+            exceptional data analyst. Through Google's Data Analytics Certificate program, I am learning how to help
+            organizations manage their wealth of data and provide crucial insights.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="skills" class="skills">
+
+      <h2>My Skills</h2>
+
+      <div>
+        <img class="skill-image-1" src="images/skill 2.png" alt="skill 1">
         <h3>Programming</h3>
         <p class=>I have spent hours coding in Java and Python. From basic concepts like conditionals and loops, to
-          advanced level
-          object-oriented programming, I am well experienced.</p>
+          advanced level object-oriented programming, I am well experienced.</p>
       </div>
-      <div class="skill-row">
-        <img class="skill-image-2" src="skill 4.png" alt="skill 2">
+
+      <div>
+        <img class="skill-image-2" src="images/skill 4.png" alt="skill 2">
         <h3>Web Development</h3>
         <p class=>I use HTML, CSS and JavaScript to turn a design into a website. As I learn back-end development on
           Dr. Angela Yu's web developing course on udemy, I am on my way to become a full-stack developer.
         </p>
       </div>
-      <div class="skill-row">
-        <img class="skill-image-3" src="skill 3.png" alt="skill 1">
+
+      <div>
+        <img class="skill-image-3" src="images/skill 3.png" alt="skill 1">
         <h3>Data Analysis</h3>
         <p class=>With my proficiency in Excel, I worked on many personal projects like the
-          <a class="project-link"
+          <a
             href="https://smuhalifax-my.sharepoint.com/:x:/g/personal/md_golam_fardin_smu_ca/EYzzfGcE4TdJrUYFIrVXM-gB6AqT48fJxmfMbi5Y6Lgetg?e=1BDVR6">
-            Budget Planner</a> and the <a class="project-link"
+            Budget Planner</a> and the <a
             href="https://smuhalifax-my.sharepoint.com/:x:/g/personal/md_golam_fardin_smu_ca/Eb2H66R5we5DqF8P7NfKy4kBAEFISCvDb_ZAQ_nmsphhLg?e=ElpWfU">
             College Course Tracker</a>.
           I continue to learn how to prepare, process and analyze data using languages and
           tools like SQL, R, and Tableau on Google's data analytics course.
         </p>
       </div>
-    </div>
-    <hr>
-    <div class="Weaknesses">
-      <h2 class="skill-title">My Weaknesses</h2>
 
-      <h3 class="nope">Umm... Let's skip this part.</h3>
-    </div>
-    <hr>
-    <div class="contact-me">
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <a target="_blank" href="https://github.com/mdgolamfardin/The-Pong-Game">
+          <div>
+            <h3>The Pong Game</h3>
+            <img src="images/pong.png" alt="the pong game">
+            <p>
+              The classic arcade game <strong>Pong</strong> built using Python. The ball will bounce off the paddles,
+              the upper wall, and the downward. If one player misses the ball, the other player scores a point. The
+              player to score 10 first wins (customizable).
+            </p>
+          </div>
+        </a><a target="_blank" href="https://github.com/mdgolamfardin/Famous-Snake-Game">
+          <div>
+            <h3>Famous Snake Game</h3>
+            <img src="images/snake-game.png" alt="famous snake game">
+            <p>The classic snake game (famously played on early Nokia phones) built using Python. The goal is simple:
+              control the snake, eat the food, and grow longer. The game keeps track of the highest score, so challenge
+              yourself to beat it every time you play!</p>
+          </div>
+        </a><a target="_blank" href="https://github.com/mdgolamfardin/Pomodoro">
+          <div>
+            <h3>Pomodoro</h3>
+            <img src="images/pomodoro.png" alt="pomodoro">
+            <p>A simple desktop software to use the famous pomodoro technique: a method that helps individuals stay
+              productive by breaking down their work into focused intervals, traditionally 25 minutes of work followed
+              by a short break.</p>
+          </div>
+        </a><a target="_blank" href="https://github.com/mdgolamfardin/Flashcard-Game-French">
+          <div>
+            <h3>French Flashcards</h3>
+            <img src="images/flashcard-game.png" alt="french flashcards">
+            <p>An application designed to help users learn French vocabulary through digital flashcards. It presents
+              words in French and asks the user to recall the English translation, excluding words from the dataset that
+              the user gets right.</p>
+          </div>
+        </a><a target="_blank"
+          href="https://smuhalifax-my.sharepoint.com/:x:/g/personal/md_golam_fardin_smu_ca/EYzzfGcE4TdJrUYFIrVXM-gB6AqT48fJxmfMbi5Y6Lgetg?rtime=SGc8ablR3Eg">
+          <div>
+            <h3>Budget Planner</h3>
+            <img src="images/budger-planner.png" alt="budget planner">
+            <p>A Microsoft Excel application for personal budgeting, allowing for daily transaction entry by category,
+              to gain valuable insights through simple inputs.</p>
+          </div>
+        </a><a target="_blank" href="https://github.com/mdgolamfardin/cardodge-game">
+          <div>
+            <h3>Cardodge Game</h3>
+            <img src="images/cardodge.png" alt="cardodge games">
+            <p>It is a simple game about making your turtle cross a road despite oncoming traffic. I mean, who expects
+              turtles to
+              follow traffic rules, right? </p>
+            <p> PS the game increases in difficulty as you progress!
+            </p>
+
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+
+
+    <section id="contact" class="closing">
       <h2>Get In Touch</h2>
-      <h3 class="m">Connect via LinkedIn or send me an email</h3>
-      <p class="contact-p m">
+      <h3>Connect via LinkedIn, follow me on GitHub, or send me an email</h3>
+      <p>
         I am seeking an internship opportunity in the field of software / web development or data analytics. If you
         think I will add any
         value to your team, please reach out to me!
       </p>
-      <button id="linkedin-btn" class="btn">LinkedIn</button>
-      <button id="email-btn" class="btn">Email</button>
-    </div>
-  </div>
+      <div class="links">
+        <a target="_blank" href="https://www.linkedin.com/in/md-golam-fardin/"> <img src="icons8-linkedin.svg"
+            alt="LinkedIn icon"><span>LinkedIn</span></a>
+        <a target="_blank" href="https://github.com/mdgolamfardin"> <img src="icons8-github.svg"
+            alt="GitHub icon">GitHub</a>
+        <a target="_blank" href="mailto:fardinishaan01@gmail.com"><img src="icons8-email.png" alt="Email icon">Email
+          Me</a>
 
-  <div class="bottom-container">
-    <p class="footer">© 2024 Md Golam Fardin</p>
-    <p class="credit">Icon credit: <a class="credit" href="https://www.flaticon.com/icons" title="icons">All icons
-        created by Freepik - Flaticon</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Md Golam Fardin</p>
+    <p>
+      Skill and cloud icons created by <a target="_blank" href="https://www.flaticon.com/icons" title="icons">Freepik -
+        Flaticon</a>
+      <br>
+
+      LinkedIn, GitHub & Email icons by <a target="_blank" href="https://icons8.com">Icons8</a>
     </p>
-  </div>
+  </footer>
+
   <script>
+    let lastScrollTop = 0; // Variable to store the last scroll position
+    const navbar = document.getElementById('navbar'); // Get the navbar element
 
-    document.getElementById('linkedin-btn').addEventListener('click', function () {
-      window.open('https://www.linkedin.com/in/md-golam-fardin/', '_blank');
-    });
+    window.addEventListener('scroll', function () {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    document.getElementById('email-btn').addEventListener('click', function () {
-      window.location.href = 'mailto:md.golam.fardin@smu.ca';
-    });
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        navbar.style.top = "-80px"; // Adjust this value based on the navbar's height
+      } else {
+        // Scrolling up
+        navbar.style.top = "0";
+        navbar.style.padding = "15px 125px 10px";
+      }
+      if (currentScroll === 0) {
+        // At the top of the page
+        navbar.style.padding = "25px 125px 10px"; // Ensure it's full size at the top
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    }, false);
   </script>
 
 
